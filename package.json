@@ -1,0 +1,18 @@
+{
+  "name": "golf-charity-platform",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "server",
+    "user",
+    "admin"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:server": "npm --workspace server run dev",
+    "dev:user": "npm --workspace user run dev",
+    "dev:admin": "npm --workspace admin run dev",
+    "build": "npm run build --workspaces",
+    "seed": "npm --workspace server run seed"
+  }
+}
